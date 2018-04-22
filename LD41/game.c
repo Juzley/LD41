@@ -44,11 +44,11 @@ typedef struct coord {
 #define BOARD_HEIGHT 8
 
 // TODO: Resolution magic numbers
-#define TILE_WIDTH (1024 / BOARD_WIDTH)
-#define TILE_HEIGHT (1024 / BOARD_HEIGHT)
+#define TILE_WIDTH (800 / BOARD_WIDTH)
+#define TILE_HEIGHT (800 / BOARD_HEIGHT)
 
 #define HUD_PADDING 10
-#define HUD_WIDTH (1600 - 1024 - HUD_PADDING * 2)
+#define HUD_WIDTH (1280 - 800 - HUD_PADDING * 2)
 #define HUD_START_X (TILE_WIDTH * BOARD_WIDTH + HUD_PADDING)
 #define HUD_BAR_HEIGHT 48
 

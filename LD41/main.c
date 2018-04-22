@@ -11,8 +11,8 @@
 #include "gamestate.h"
 #include "menu_main.h"
 
-#define SCREEN_WIDTH 1600
-#define SCREEN_HEIGHT 1024
+#define SCREEN_WIDTH 1280
+#define SCREEN_HEIGHT 800
 
 unsigned int
 main_screen_width(void)

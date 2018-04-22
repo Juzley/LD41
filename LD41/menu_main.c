@@ -37,11 +37,11 @@ menu_main_draw(SDL_Renderer *renderer,
     draw_overlay(renderer, main_screen_width(), main_screen_height());
 
     mapped_font_draw_ex(renderer, menu->big_font, center, y, 0, 0, 0, color_white, ALIGN_CENTER, "LD41");
-    y += BIG_FONT_SIZE + SMALL_FONT_SIZE;
+    y += BIG_FONT_SIZE + SMALL_FONT_SIZE * 2;
 
     mapped_font_draw_ex(renderer, menu->small_font, center, y, 0, 0, 0, color_white, ALIGN_CENTER, "Press T for tutorial");
-    y += SMALL_FONT_SIZE * 2;
-    mapped_font_draw_ex(renderer, menu->small_font, center, y, 0, 0, 0, color_white, ALIGN_CENTER, "Press any other key to start");
+    y += SMALL_FONT_SIZE;
+    mapped_font_draw_ex(renderer, menu->small_font, center, y, 0, 0, 0, color_white, ALIGN_CENTER, "Or any other key to start");
 
     mapped_font_draw_ex(renderer, menu->mini_font, center, main_screen_height() - MINI_FONT_SIZE * 2, 0, 0, 0,
                         color_white, ALIGN_CENTER, "Game by Juzley, Assets from kenney.nl");
